@@ -38,12 +38,15 @@
             this.txtAnnualInterestRate = new System.Windows.Forms.TextBox();
             this.btnCalculate = new System.Windows.Forms.Button();
             this.btnClear = new System.Windows.Forms.Button();
+            this.cbxEmail = new System.Windows.Forms.CheckBox();
+            this.txtEmail = new System.Windows.Forms.TextBox();
+            this.lblEmail = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // lblPropertyVal
             // 
             this.lblPropertyVal.AutoSize = true;
-            this.lblPropertyVal.Location = new System.Drawing.Point(13, 26);
+            this.lblPropertyVal.Location = new System.Drawing.Point(12, 33);
             this.lblPropertyVal.Name = "lblPropertyVal";
             this.lblPropertyVal.Size = new System.Drawing.Size(120, 13);
             this.lblPropertyVal.TabIndex = 0;
@@ -52,7 +55,7 @@
             // lblAnnualIntRate
             // 
             this.lblAnnualIntRate.AutoSize = true;
-            this.lblAnnualIntRate.Location = new System.Drawing.Point(13, 66);
+            this.lblAnnualIntRate.Location = new System.Drawing.Point(12, 66);
             this.lblAnnualIntRate.Name = "lblAnnualIntRate";
             this.lblAnnualIntRate.Size = new System.Drawing.Size(163, 13);
             this.lblAnnualIntRate.TabIndex = 1;
@@ -70,7 +73,7 @@
             // lblDownPayment
             // 
             this.lblDownPayment.AutoSize = true;
-            this.lblDownPayment.Location = new System.Drawing.Point(12, 137);
+            this.lblDownPayment.Location = new System.Drawing.Point(12, 141);
             this.lblDownPayment.Name = "lblDownPayment";
             this.lblDownPayment.Size = new System.Drawing.Size(124, 13);
             this.lblDownPayment.TabIndex = 3;
@@ -124,11 +127,42 @@
             this.btnClear.UseVisualStyleBackColor = true;
             this.btnClear.Click += new System.EventHandler(this.btnClear_Click);
             // 
+            // cbxEmail
+            // 
+            this.cbxEmail.AutoSize = true;
+            this.cbxEmail.Location = new System.Drawing.Point(241, 172);
+            this.cbxEmail.Name = "cbxEmail";
+            this.cbxEmail.Size = new System.Drawing.Size(83, 17);
+            this.cbxEmail.TabIndex = 10;
+            this.cbxEmail.Text = "Email copy?";
+            this.cbxEmail.UseVisualStyleBackColor = true;
+            this.cbxEmail.CheckedChanged += new System.EventHandler(this.cbxEmail_CheckedChanged);
+            // 
+            // txtEmail
+            // 
+            this.txtEmail.Enabled = false;
+            this.txtEmail.Location = new System.Drawing.Point(222, 195);
+            this.txtEmail.Name = "txtEmail";
+            this.txtEmail.Size = new System.Drawing.Size(100, 20);
+            this.txtEmail.TabIndex = 11;
+            // 
+            // lblEmail
+            // 
+            this.lblEmail.AutoSize = true;
+            this.lblEmail.Location = new System.Drawing.Point(12, 202);
+            this.lblEmail.Name = "lblEmail";
+            this.lblEmail.Size = new System.Drawing.Size(102, 13);
+            this.lblEmail.TabIndex = 12;
+            this.lblEmail.Text = "Enter email address:";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(404, 296);
+            this.Controls.Add(this.lblEmail);
+            this.Controls.Add(this.txtEmail);
+            this.Controls.Add(this.cbxEmail);
             this.Controls.Add(this.btnClear);
             this.Controls.Add(this.btnCalculate);
             this.Controls.Add(this.txtAnnualInterestRate);
@@ -158,6 +192,9 @@
         private System.Windows.Forms.TextBox txtAnnualInterestRate;
         private System.Windows.Forms.Button btnCalculate;
         private System.Windows.Forms.Button btnClear;
+        private System.Windows.Forms.CheckBox cbxEmail;
+        private System.Windows.Forms.TextBox txtEmail;
+        private System.Windows.Forms.Label lblEmail;
     }
 }
 

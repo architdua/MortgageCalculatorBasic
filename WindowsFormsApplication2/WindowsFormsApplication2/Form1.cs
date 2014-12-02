@@ -133,5 +133,21 @@ namespace WindowsFormsApplication2
             txtDownPayment.Text = String.Empty;
 
         }
+
+        private void cbxEmail_CheckedChanged(object sender, EventArgs e)
+        {
+            if (cbxEmail.Checked)
+            {
+                txtEmail.Enabled = true;
+            }
+            else
+            {
+                txtEmail.Enabled = false;
+            }
+
+
+        }
+
+     
     }
 }
